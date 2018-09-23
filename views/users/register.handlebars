@@ -1,0 +1,27 @@
+<div class="row">
+    <div class="col-md-6 mx-auto">
+        <div class="card card-body">
+            <img id="logo" src="/img/logo.png">
+            <h3 class="text-center">Enregistrez vos identifiants</h3>
+            <form action="/users/register" method="post">
+                <div class="form-group">
+                    <label for="name">Nom</label>
+                    <input type="text" class="form-control" name="name" value="{{name}}" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" class="form-control" value="{{email}}" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" name="password" class="form-control" value="{{password}}" required>
+                </div>
+                <div class="form-group">
+                    <label for="password2">Confirmez votre mot de passe</label>
+                    <input type="password" name="password2" class="form-control" value="{{password2}}" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Valider</button>
+            </form>
+        </div>
+    </div>
+</div>
